@@ -1,0 +1,1531 @@
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:16:47 -0700
+Processing by Jasminerice::SpecController#index as */*
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (4.5ms)
+Completed 200 OK in 24ms (Views: 23.6ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:16:48 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (3.9ms)
+Completed 200 OK in 5ms (Views: 4.7ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 10:16:48 -0700
+Compiled jasmine.css  (0ms)  (pid 25157)
+Served asset /jasmine.css - 200 OK (9ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 10:16:48 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 10:16:48 -0700
+Compiled jasmine.js  (1ms)  (pid 25157)
+Compiled jasmine-html.js  (0ms)  (pid 25157)
+Compiled jasmine-jquery-1.4.2.js  (0ms)  (pid 25157)
+Compiled jasminerice.js  (184ms)  (pid 25157)
+Served asset /jasminerice.js - 200 OK (193ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 10:16:48 -0700
+Error compiling asset spec.js:
+Sprockets::FileNotFound: couldn't find file 'backbone'
+  (in /Users/pcanfield/codez/backbone_bumpers/spec/javascripts/spec.js.coffee:2)
+Served asset /spec.js - 500 Internal Server Error
+
+
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:19:32 -0700
+Processing by Jasminerice::SpecController#index as */*
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (5.2ms)
+Completed 200 OK in 14ms (Views: 14.1ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:19:33 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (2.6ms)
+Completed 200 OK in 3ms (Views: 3.4ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 10:19:33 -0700
+Served asset /jasmine.css - 200 OK (3ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 10:19:33 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 10:19:33 -0700
+Served asset /jasminerice.js - 200 OK (3ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 10:19:33 -0700
+Error compiling asset spec.js:
+Sprockets::FileNotFound: couldn't find file 'backbone'
+  (in /Users/pcanfield/codez/backbone_bumpers/spec/javascripts/spec.js.coffee:2)
+Served asset /spec.js - 500 Internal Server Error
+
+
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:22:17 -0700
+Processing by Jasminerice::SpecController#index as */*
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (5.1ms)
+Completed 200 OK in 13ms (Views: 13.3ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:22:18 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (3.2ms)
+Completed 200 OK in 4ms (Views: 4.0ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 10:22:18 -0700
+Served asset /jasmine.css - 200 OK (3ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 10:22:18 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 10:22:18 -0700
+Served asset /jasminerice.js - 200 OK (4ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 10:22:18 -0700
+Error compiling asset spec.js:
+Sprockets::FileNotFound: couldn't find file 'backbone'
+  (in /Users/pcanfield/codez/backbone_bumpers/spec/javascripts/spec.js.coffee:2)
+Served asset /spec.js - 500 Internal Server Error
+
+
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:26:06 -0700
+Processing by Jasminerice::SpecController#index as */*
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (5.6ms)
+Completed 200 OK in 18ms (Views: 17.3ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:26:07 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (3.0ms)
+Completed 200 OK in 4ms (Views: 3.7ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 10:26:07 -0700
+Served asset /jasmine.css - 200 OK (4ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 10:26:07 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 10:26:07 -0700
+Served asset /jasminerice.js - 200 OK (3ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 10:26:07 -0700
+Error compiling asset spec.js:
+Sprockets::FileNotFound: couldn't find file 'backbone'
+  (in /Users/pcanfield/codez/backbone_bumpers/spec/javascripts/spec.js.coffee:2)
+Served asset /spec.js - 500 Internal Server Error
+
+
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:28:09 -0700
+Processing by Jasminerice::SpecController#index as */*
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (5.1ms)
+Completed 200 OK in 18ms (Views: 18.1ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:28:09 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (3.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 10:28:09 -0700
+Served asset /jasmine.css - 200 OK (3ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 10:28:09 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 10:28:10 -0700
+Served asset /jasminerice.js - 200 OK (3ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 10:28:10 -0700
+Error compiling asset spec.js:
+ArgumentError: wrong number of arguments (0 for 1)
+  (in /Users/pcanfield/codez/backbone_bumpers/spec/javascripts/spec.js.coffee:3)
+Served asset /spec.js - 500 Internal Server Error
+
+
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:30:31 -0700
+Processing by Jasminerice::SpecController#index as */*
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (5.0ms)
+Completed 200 OK in 17ms (Views: 17.2ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:30:32 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (3.8ms)
+Completed 200 OK in 5ms (Views: 4.6ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 10:30:32 -0700
+Served asset /jasmine.css - 200 OK (3ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 10:30:32 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 10:30:32 -0700
+Served asset /jasminerice.js - 200 OK (3ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 10:30:32 -0700
+Compiled backbone.bumpers.js  (149ms)  (pid 25356)
+Compiled backbone_bumpers_spec.js  (122ms)  (pid 25356)
+Compiled spec.js  (443ms)  (pid 25356)
+Served asset /spec.js - 200 OK (458ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:31:02 -0700
+Processing by Jasminerice::SpecController#index as */*
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (5.2ms)
+Completed 200 OK in 16ms (Views: 16.3ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 10:31:03 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (3.9ms)
+Completed 200 OK in 5ms (Views: 4.7ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 10:31:03 -0700
+Served asset /jasmine.css - 200 OK (3ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 10:31:03 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 10:31:03 -0700
+Served asset /jasminerice.js - 200 OK (3ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 10:31:03 -0700
+Compiled backbone.js  (0ms)  (pid 25392)
+Compiled spec.js  (148ms)  (pid 25392)
+Served asset /spec.js - 200 OK (155ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:03:20 -0700
+Processing by Jasminerice::SpecController#index as */*
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (4.7ms)
+Completed 200 OK in 15ms (Views: 15.2ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:03:21 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (2.5ms)
+Completed 200 OK in 3ms (Views: 3.3ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:03:21 -0700
+Served asset /jasmine.css - 200 OK (3ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:03:21 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:03:21 -0700
+Served asset /jasminerice.js - 200 OK (4ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:03:21 -0700
+Error compiling asset spec.js:
+Sprockets::FileNotFound: couldn't find file 'underscore'
+  (in /Users/pcanfield/codez/backbone_bumpers/spec/javascripts/spec.js.coffee:1)
+Served asset /spec.js - 500 Internal Server Error
+
+
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:04:12 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (1.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:04:12 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:04:12 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:04:12 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:04:12 -0700
+Compiled underscore.js  (0ms)  (pid 25507)
+Compiled spec.js  (156ms)  (pid 25507)
+Served asset /spec.js - 200 OK (164ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:04:40 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (1.8ms)
+Completed 200 OK in 2ms (Views: 2.3ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:04:40 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:04:40 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:04:40 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:04:40 -0700
+Compiled jquery.js  (1ms)  (pid 25507)
+Compiled spec.js  (140ms)  (pid 25507)
+Served asset /spec.js - 200 OK (150ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:04:42 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (1.6ms)
+Completed 200 OK in 2ms (Views: 2.1ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:04:42 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:04:42 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:04:42 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:04:42 -0700
+Served asset /spec.js - 200 OK (0ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:18:15 -0700
+Processing by Jasminerice::SpecController#index as */*
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (5.2ms)
+Completed 200 OK in 18ms (Views: 17.4ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:18:16 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (3.0ms)
+Completed 200 OK in 4ms (Views: 3.8ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:18:16 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:18:16 -0700
+Served asset /jasmine.css - 200 OK (2ms)
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:18:16 -0700
+Served asset /jasminerice.js - 200 OK (4ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:18:16 -0700
+Compiled backbone.bumpers.js  (166ms)  (pid 25746)
+Compiled backbone_bumpers_spec.js  (129ms)  (pid 25746)
+Compiled spec.js  (115ms)  (pid 25746)
+Served asset /spec.js - 200 OK (458ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:23:42 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (2.3ms)
+Completed 200 OK in 3ms (Views: 2.9ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:23:42 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:23:42 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:23:42 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:23:42 -0700
+Compiled backbone_bumpers_spec.js  (131ms)  (pid 25746)
+Compiled spec.js  (115ms)  (pid 25746)
+Served asset /spec.js - 200 OK (277ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:30:31 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (2.3ms)
+Completed 200 OK in 3ms (Views: 3.0ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:30:31 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:30:31 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:30:31 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:30:31 -0700
+Compiled backbone_bumpers_spec.js  (132ms)  (pid 25746)
+Compiled spec.js  (114ms)  (pid 25746)
+Served asset /spec.js - 200 OK (278ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:30:48 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (1.9ms)
+Completed 200 OK in 3ms (Views: 2.5ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:30:48 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:30:48 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:30:48 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:30:48 -0700
+Error compiling asset spec.js:
+ExecJS::RuntimeError: SyntaxError: unexpected INDENT
+  (in /Users/pcanfield/codez/backbone_bumpers/app/assets/javascripts/backbone.bumpers.js.coffee)
+Served asset /spec.js - 500 Internal Server Error
+
+
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:30:57 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (2.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:30:57 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:30:57 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:30:57 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:30:57 -0700
+Error compiling asset spec.js:
+ExecJS::RuntimeError: SyntaxError: cannot call super outside of an instance method.
+  (in /Users/pcanfield/codez/backbone_bumpers/app/assets/javascripts/backbone.bumpers.js.coffee)
+Served asset /spec.js - 500 Internal Server Error
+
+
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:31:11 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (2.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:31:11 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:31:11 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:31:12 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:31:12 -0700
+Compiled backbone.bumpers.js  (146ms)  (pid 25746)
+Compiled spec.js  (114ms)  (pid 25746)
+Served asset /spec.js - 200 OK (275ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:32:11 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (2.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:32:11 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:32:11 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:32:11 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:32:11 -0700
+Compiled backbone.bumpers.js  (147ms)  (pid 25746)
+Compiled spec.js  (114ms)  (pid 25746)
+Served asset /spec.js - 200 OK (276ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:32:34 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (1.8ms)
+Completed 200 OK in 2ms (Views: 2.4ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:32:34 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:32:34 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:32:34 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:32:34 -0700
+Served asset /spec.js - 200 OK (0ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:33:02 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (1.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:33:02 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:33:02 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:33:02 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:33:02 -0700
+Compiled backbone.bumpers.js  (146ms)  (pid 25746)
+Compiled spec.js  (114ms)  (pid 25746)
+Served asset /spec.js - 200 OK (294ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:36:39 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (2.4ms)
+Completed 200 OK in 3ms (Views: 3.1ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:36:39 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:36:39 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:36:39 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:36:39 -0700
+Compiled backbone_bumpers_spec.js  (137ms)  (pid 25746)
+Compiled spec.js  (120ms)  (pid 25746)
+Served asset /spec.js - 200 OK (290ms)
+
+
+Started GET "/jasmine" for 127.0.0.1 at 2013-06-11 11:36:41 -0700
+Processing by Jasminerice::SpecController#index as HTML
+  Rendered /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/gems/jasminerice-0.0.10/app/views/jasminerice/spec/index.html.haml (1.7ms)
+Completed 200 OK in 2ms (Views: 2.2ms)
+
+
+Started GET "/assets/jasmine.css" for 127.0.0.1 at 2013-06-11 11:36:41 -0700
+Served asset /jasmine.css - 200 OK (0ms)
+
+
+Started GET "/assets/spec.css" for 127.0.0.1 at 2013-06-11 11:36:41 -0700
+Served asset /spec.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/spec.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  rack (1.4.5) lib/rack/server.rb:137:in `start'
+  rack (1.4.5) bin/rackup:4:in `<top (required)>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `load'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/rackup:19:in `<main>'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `eval'
+  /Users/pcanfield/.rvm/gems/ruby-1.9.3-p429@backbone_bumbers/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+
+
+Started GET "/assets/jasminerice.js" for 127.0.0.1 at 2013-06-11 11:36:41 -0700
+Served asset /jasminerice.js - 200 OK (0ms)
+
+
+Started GET "/assets/spec.js" for 127.0.0.1 at 2013-06-11 11:36:41 -0700
+Served asset /spec.js - 200 OK (0ms)
