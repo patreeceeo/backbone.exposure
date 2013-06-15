@@ -10,6 +10,7 @@ group :development, :test do
   gem 'jasminerice'
   gem 'jquery-rails'
   gem 'guard-jasmine'
+  gem 'coffee-rails-source-maps'
 end
 
 group :assets do

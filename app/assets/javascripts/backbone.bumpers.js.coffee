@@ -12,41 +12,37 @@
 # attributes - an (plain) Object of initial attributes
 # options - see backbone.js documentation
 
-Backbone.Bumpers or= {}
 
-Backbone.Bumpers.add_attribute_name_bumpers = ->
+for_attribute_names = (snapshot) ->
   # Bind reference to original methods in outer scope.
   _get = @get
   _set = @set
 
-  harden_attributes = (snapshot) =>
-    # define new methods
-    @get = (attribute_key, other_args...) ->
-      unless attribute_key of snapshot
-        throw "Attempting to `get` non-existent attribute '#{attribute_key}' on model with hard attributes."
-      _get.call this, attribute_key, other_args...
-    @set = (first_arg, other_args...) ->
-      # set can set multiple attributes at a time
-      attributes = null
-      _check = (attributes_or_attribute_key) ->
-        if _.isObject(attributes_or_attribute_key) 
-          attributes = attributes_or_attribute_key
-          _check(attribute_key) for attribute_key of attributes_or_attribute_key
-        else 
-          attribute_value = other_args[0]
-          if attributes?
-            attribute_value = attributes[attributes_or_attribute_key]
+  @get = (attribute_key, other_args...) ->
+    unless attribute_key of snapshot
+      throw "Attempting to `get` non-existent attribute '#{attribute_key}' on model with hard attributes."
+    _get.call this, attribute_key, other_args...
+  @set = (first_arg, other_args...) ->
+    # set can set multiple attributes at a time
+    attributes = null
+    _check = (attributes_or_attribute_key) ->
+      if _.isObject(attributes_or_attribute_key) 
+        attributes = attributes_or_attribute_key
+        _check(attribute_key) for attribute_key of attributes_or_attribute_key
+      else 
+        attribute_value = other_args[0]
+        if attributes?
+          attribute_value = attributes[attributes_or_attribute_key]
 
-          unless attributes_or_attribute_key of snapshot 
-            throw "Attempting to `set` non-existent attribute '#{attributes_or_attribute_key}' on model with hard attributes."
+        unless attributes_or_attribute_key of snapshot 
+          throw "Attempting to `set` non-existent attribute '#{attributes_or_attribute_key}' on model with hard attributes."
 
-          reference_value = snapshot[attributes_or_attribute_key]
-          if reference_value? and reference_value.constructor isnt attribute_value.constructor
-            throw "Attempting to change the type of hard attribute '#{attributes_or_attribute_key}'."
-      
-      _check(first_arg) 
-      _set.call this, first_arg, other_args...
-  harden_attributes @defaults
+        reference_value = snapshot[attributes_or_attribute_key]
+        if reference_value? and reference_value.constructor isnt attribute_value.constructor
+          throw "Attempting to change the type of hard attribute '#{attributes_or_attribute_key}'."
+    
+    _check(first_arg) 
+    _set.call this, first_arg, other_args...
 
 
   # Create a new outer scope for each attribute containing the corresponding
@@ -64,3 +60,15 @@ Backbone.Bumpers.add_attribute_name_bumpers = ->
       else
         @get attribute_key, other_args...
   add_accessor_for key for own key of @attributes
+
+
+Backbone.Bumpers or= (Model, options) ->
+
+  _constructor = Model::constructor
+  Model::constructor = ->
+    _constructor(arguments)
+    for key, value of options
+      if key is 'name_bumpers'
+        for_attribute_names.call(Model.prototype, @[value])
+
+  Model
