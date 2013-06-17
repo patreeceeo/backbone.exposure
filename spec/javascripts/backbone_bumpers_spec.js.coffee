@@ -4,28 +4,23 @@ describe 'Backbone.Bumpers', ->
     expect(Backbone.Bumpers).toBeDefined()
 
   describe 'attribute name bumpers', ->
-    ModelWithNameBumbers = null
     model1 = null
     model2 = null
 
     beforeEach ->
-      class ModelWithNameBumbers extends Backbone.Bumpers(Backbone.Model,
-        name_bumpers: -> @defaults
-      )
-        defaults: 
+      class Actor extends Backbone.Bumpers.Model
+        defaults:
           color: 'blue'
           name: 'tobias'
           age: 34
-        constructor: ->
-          super
-          Backbone.Bumpers.for_attribute_names.call(this, @defaults)
 
-      model1 = new ModelWithNameBumbers()
+      model1 = new Actor()
 
-      model2 = new ModelWithNameBumbers
+      model2 = new Actor
         color: 'yellow'
         name: 'gob'
         age: 35
+        tricks: 'illusions'
       
 
     it 'should not allow us to create new attributes', ->
@@ -35,8 +30,15 @@ describe 'Backbone.Bumpers', ->
 
     it 'should not allow us to `get` non-existent attributes', ->
       expect(-> model1.get('hair')).toThrow()
+      expect(-> model2.get('teeth')).toThrow()
 
     it 'should allow us to get attributes that do exist', ->
       expect(-> model1.get('name')).not.toThrow()
-      model1.get('name')
+      expect(-> model2.get('age')).not.toThrow()
+
+    it 'should not allow us to change the type of attributes', ->
+      expect(-> model1.set('name', 5)).toThrow()
+      expect(-> model2.set('age', 'is just a number')).toThrow()
+
+
     

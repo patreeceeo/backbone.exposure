@@ -1,6 +1,6 @@
 # Public: Extended version of Backbone's Model class. Added features:
 #   "hardened attributes" - model will throw an error if you try to do anything
-#                           with attributes that were not specified in the 
+#                           with attributes that were not specified in the
 #                           `defaults` hash or if you try to change the type of
 #                           any such attribute.
 #   "automatic accessors" - for each of the model's initial attributes there
@@ -12,63 +12,72 @@
 # attributes - an (plain) Object of initial attributes
 # options - see backbone.js documentation
 
+bump = (message) ->
+  throw new Exception "Bump! #{message}"
 
-for_attribute_names = (snapshot) ->
-  # Bind reference to original methods in outer scope.
-  _get = @get
-  _set = @set
+with_each_attr = (thing, fn) ->
+  if _.isObject(thing)
+    fn key, thing[key] for key of thing
+  else
+    fn thing
+  
+Backbone.Bumpers =
+  attributeKeys: (snapshot = @defaults) ->
+    # Bind reference to original methods in outer scope.
+    _get = @get
+    _set = @set
 
-  @get = (attribute_key, other_args...) ->
-    unless attribute_key of snapshot
-      throw "Attempting to `get` non-existent attribute '#{attribute_key}' on model with hard attributes."
-    _get.call this, attribute_key, other_args...
-  @set = (first_arg, other_args...) ->
-    # set can set multiple attributes at a time
-    attributes = null
-    _check = (attributes_or_attribute_key) ->
-      if _.isObject(attributes_or_attribute_key) 
-        attributes = attributes_or_attribute_key
-        _check(attribute_key) for attribute_key of attributes_or_attribute_key
-      else 
-        attribute_value = other_args[0]
-        if attributes?
-          attribute_value = attributes[attributes_or_attribute_key]
+    @get = (key, options...) ->
+      unless key of snapshot
+        bump "Attempting to `get()` with unknown key '#{key}'."
+      _get.call this, key, options...
+    @set = (arg1, options...) ->
+      with_each_attr arg1, (key) ->
+        unless key of snapshot
+          bump "Attempting to `set()` with unknown key '#{arg1}'."
+      _set.call this, arg1, options...
 
-        unless attributes_or_attribute_key of snapshot 
-          throw "Attempting to `set` non-existent attribute '#{attributes_or_attribute_key}' on model with hard attributes."
+  attributeTypes: (snapshot = @defaults) ->
+    _set = @set
+    @set = (arg1, options...) ->
+      with_each_attr arg1, (key, value) ->
+        ref = snapshot[arg1]
+        value = value or options[0]
+        if ref? and ref.constructor isnt value.constructor
+          bump """
+            Attempting to `set()` with value of type
+            '#{value.constructor}' is not allowed for key '#{arg1}'.
+            """
+      _set.call this, arg1, options...
 
-        reference_value = snapshot[attributes_or_attribute_key]
-        if reference_value? and reference_value.constructor isnt attribute_value.constructor
-          throw "Attempting to change the type of hard attribute '#{attributes_or_attribute_key}'."
-    
-    _check(first_arg) 
-    _set.call this, first_arg, other_args...
-
-
+add_accessors = (attributes = @attributes) ->
   # Create a new outer scope for each attribute containing the corresponding
   # attribute key.
   add_accessor_for = (attribute_key) =>
     # make sure we aren't clobbering/overriding any methods provided by Backbone
     if attribute_key of Backbone.Model.prototype
-      throw "Attempting to create an accessor method ('#{attribute_key}') with the same name as an existing method."
+      bump """
+        Attempting to create an accessor method ('#{attribute_key}')
+        with the same name as an existing method.
+        """
     # @constructor is SocialPromote.BaseModel (in this case)
     @constructor::[attribute_key] = (attribute_value, other_args...) ->
       if attribute_value?
-       # OPTIMIZE: look for a way to do type checking here without checking if this 
-       # is a legal attribute, since we already know that it is.
         @set attribute_key, attribute_value, other_args...
       else
         @get attribute_key, other_args...
-  add_accessor_for key for own key of @attributes
+  add_accessor_for key for own key of attributes
 
+Backbone.Nimble or= {}
 
-Backbone.Bumpers or= (Model, options) ->
+class Backbone.Nimble.Model extends Backbone.Model
+  constructor: (args...) ->
+    super
+    fn.apply this, args for fn in @constructors
 
-  _constructor = Model::constructor
-  Model::constructor = ->
-    _constructor(arguments)
-    for key, value of options
-      if key is 'name_bumpers'
-        for_attribute_names.call(Model.prototype, @[value])
+class Backbone.Bumpers.Model extends Backbone.Nimble.Model
+  constructors: [
+    Backbone.Bumpers.attributeKeys
+    Backbone.Bumpers.attributeTypes
+  ]
 
-  Model
