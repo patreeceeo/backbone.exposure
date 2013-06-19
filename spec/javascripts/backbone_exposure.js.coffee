@@ -1,14 +1,14 @@
-describe 'Baccessors', ->
+describe 'Exposure', ->
 
   it 'should be defined', ->
-    expect(Baccessors).toBeDefined()
+    expect(Exposure).toBeDefined()
 
   describe 'the methods created for attributes', ->
     model1 = null
     model2 = null
 
     beforeEach ->
-      class Actor extends Baccessors.Model
+      class Actor extends Exposure.Model
         defaults:
           color: 'blue'
           name: 'tobias'
@@ -69,7 +69,7 @@ describe 'Baccessors', ->
     Actor = null
 
     beforeEach ->
-      class Actor extends Baccessors.Model
+      class Actor extends Exposure.Model
         color: -> 'blue'
         name: -> 'tobias'
         age: -> 34

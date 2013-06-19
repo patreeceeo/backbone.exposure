@@ -1,6 +1,6 @@
 
 
-window.Baccessors =
+window.Exposure =
   getMethodKeys: (object) ->
     keys = for own key of object.__proto__ when key isnt 'constructor'
       key if _.isFunction object.__proto__[key]
@@ -26,7 +26,7 @@ window.Baccessors =
 
   createAttributesForMethods: (attributes = @attributes) ->
     _toJSON = @toJSON
-    methodKeys = Baccessors.getMethodKeys @
+    methodKeys = Exposure.getMethodKeys @
     @toJSON = (args...) =>
       json = _toJSON.apply(this, args)
       for key in methodKeys
@@ -41,12 +41,12 @@ window.Baccessors =
           @[key](attributes[key])
         delete attributes[key]
     
-class Baccessors.Model extends Backbone.Model
+class Exposure.Model extends Backbone.Model
   constructor: (args...) ->
     super(args...)
     fn.apply this, args for fn in [
-        Baccessors.createAttributesForMethods
-        Baccessors.createMethodsForAttributes
+        Exposure.createAttributesForMethods
+        Exposure.createMethodsForAttributes
     ]
 
 

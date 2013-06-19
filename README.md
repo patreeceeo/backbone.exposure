@@ -3,7 +3,7 @@ Reduce boilerplate in your backbone models with a slightly opinionated way of do
 
 ### Creates methods for getting each attribute.
 
-    class Actor extends Baccessors.Model
+    class Actor extends Exposure.Model
         defaults:
             color: 'blue'
             name: 'tobias'
@@ -31,7 +31,7 @@ Reduce boilerplate in your backbone models with a slightly opinionated way of do
 
 ### Does the opposite for any normally defined methods! 
 
-    class Actor extends Baccessors.Model
+    class Actor extends Exposure.Model
         color: -> 'blue'
         name: -> 'tobias'
         age: -> 34
