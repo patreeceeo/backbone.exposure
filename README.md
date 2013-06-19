@@ -1,7 +1,7 @@
-# BACCESSORS
+# BACKBONE.EXPOSURE
 Reduce boilerplate in your backbone models with a slightly opinionated way of doing attributes.
 
-## Creates methods for getting each attribute.
+### Creates methods for getting each attribute.
 
     class Actor extends Baccessors.Model
         defaults:
@@ -21,7 +21,7 @@ Reduce boilerplate in your backbone models with a slightly opinionated way of do
     model1.color() # 'blue'
     model2.tricks() # 'illusions'
 
-## Those same methods also act as setters.
+### Those same methods also act as setters.
 
     model1.color 'white'
     model2.name 'el pollo'
@@ -29,7 +29,7 @@ Reduce boilerplate in your backbone models with a slightly opinionated way of do
     model1.color() # 'white'
     model2.name() # 'el pollo'
 
-## Does the opposite for any normally defined methods! 
+### Does the opposite for any normally defined methods! 
 
     class Actor extends Baccessors.Model
         color: -> 'blue'
@@ -51,4 +51,6 @@ Reduce boilerplate in your backbone models with a slightly opinionated way of do
 
     dnzl.message() # 'Do it right now!'
 
-    
+## Dependencies (Production)
+- backbone.js (http://backbonejs.org)
+- underscore.js (http://underscorejs.org)
