@@ -3,6 +3,6 @@
 #= require jquery
 #= require sinon
 #= require jasmine-sinon
-#= require baccessors
+#= require backbone.exposure
 #= require_self
 #= require_tree ./
