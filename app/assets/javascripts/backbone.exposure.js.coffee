@@ -1,19 +1,23 @@
 
-# Aggregate defaults up the prototype chain in `snapshot`
-aggregate_defaults = (current) ->
-  defaults = {}
-  while current?.defaults
-    defaults = _.defaults {}, defaults, _.result(current, 'defaults')
+with_each_attr = (thing, fn) ->
+  if _.isObject(thing)
+    fn key, thing[key] for key of thing
+  else
+    fn thing
+
+inherit = (key, current) ->
+  value = {}
+  while _.isFunction(current?[key]) or _.isObject(current?[key])
+    value = _.defaults {}, value, _.result(current, key)
     current = Object.getPrototypeOf current
-  defaults 
+  value
 
 window.Exposure =
   getMethodKeys: (object) ->
     proto = Object.getPrototypeOf object
-    key for own key of proto when not 
-        key of Backbone.Model.prototype and not
-        key is 'constructor' and not
-        key is 'defaults' and
+    key for own key of proto when proto isnt Backbone.Model.prototype and
+        key isnt 'constructor' and
+        key isnt 'defaults' and
         _.isFunction proto[key]
 
   makeGetterSetterFor: (key) ->
@@ -26,8 +30,8 @@ window.Exposure =
   createMethodsForAttributes: () ->
     # Create a new outer scope for each attribute containing
     # the corresponding attribute key.
-    attributes = aggregate_defaults this
-    @constructor::__accessors__ = {}
+    attributes = inherit 'defaults', this
+    @constructor::__accessors__ = inherit '__accessors__', @constructor.prototype
     createMethodFor = (key) =>
       # Make sure we aren't clobbering/overriding any methods
       # provided by Backbone.
@@ -42,22 +46,24 @@ window.Exposure =
 
   createAttributesForMethods: () ->
     _toJSON = @toJSON
-    methodKeys = Exposure.getMethodKeys @
-    attributes = aggregate_defaults this
+    methodKeys = @expose_methods_as_attributes or []
     @toJSON = (args...) =>
       json = _toJSON.apply(this, args)
-      for key in methodKeys
-        json[key] = @[key]()
+      for key in methodKeys 
+        try 
+          json[key] = @[key]()
+        catch e
+          console.log "Uh oh, model method #{key}() requires arguments?"
       json
-    
-    for key in methodKeys when not key of @__accessors__
-      if attributes[key]?
-        if _.isArray attributes[key]
-          @[key].apply(this, attributes[key])
+
+    _set = @set
+    @set = (first_arg, options...) =>
+      with_each_attr first_arg, (key, value) =>
+        if key in (@expose_methods_as_attributes or [])
+          @[key](value or options[1])
         else
-          @[key](attributes[key])
-        delete attributes[key]
-    
+          _set.call(this, first_arg, options...)
+ 
 class Exposure.Model extends Backbone.Model
   constructor: (args...) ->
     super(args...)
